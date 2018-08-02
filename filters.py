@@ -1,3 +1,8 @@
+import argparse 
+
+#parser = argparse.ArgumentParser()
+#parser.add_argument(required=True, '--image',type=str,default='',help='name of picture file') 
+
 geo_json_geometry = {
 "type": "Polygon",
         "coordinates": [
@@ -38,8 +43,10 @@ date_range_filter = {
   "type": "DateRangeFilter",
   "field_name": "acquired",
   "config": {
-    "gte": "2016-07-01T00:00:00.000Z",
-    "lte": "2016-08-01T00:00:00.000Z"
+
+    #one param is date by yr/month/day
+    "gte": "2018-06-01T00:00:00.000Z", #start date
+    "lte": "2018-08-01T00:00:00.000Z"  #end date
   }
 }
 
