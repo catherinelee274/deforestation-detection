@@ -1,4 +1,5 @@
-import argparse 
+import argparse
+import arrow
 
 #parser = argparse.ArgumentParser()
 #parser.add_argument(required=True, '--image',type=str,default='',help='name of picture file') 
@@ -45,8 +46,8 @@ date_range_filter = {
   "config": {
 
     #one param is date by yr/month/day
-    "gte": "2018-06-01T00:00:00.000Z", #start date
-    "lte": "2018-08-01T00:00:00.000Z"  #end date
+    "gte": "2018-07-01T00:00:00.000Z", #start date
+    "lte": arrow.now().format('YYYY-MM-DD')+"T00:00:00.000Z"  #end date
   }
 }
 

@@ -1,0 +1,5 @@
+4-band planetscope scene
+3-band PS
+planetscope ortho tile
+rapideye ortho tile
+ 

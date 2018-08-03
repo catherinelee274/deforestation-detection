@@ -7,7 +7,14 @@ from filters import redding_reservoir
 
 # Search API request object
 search_endpoint_request = {
-  "item_types": ["REOrthoTile"],
+  "item_types": ["REOrthoTile",
+"PSScene4Band",
+"PSScene3Band",
+"Sentinel1",
+"REOrthoTile",
+"MOD09GA",
+"MYD09GA",
+"PSOrthoTile"],
   "filter": redding_reservoir
 }
 
